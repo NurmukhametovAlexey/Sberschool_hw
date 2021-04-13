@@ -1,4 +1,4 @@
-package ru.sbrf.lesson3.zoo.animal;
+package ru.sbrf.lesson3.hw3.zoo.animal;
 
 public abstract class Animal {
     String name;
@@ -31,7 +31,7 @@ public abstract class Animal {
 
     public void celebrateBDay(){
         System.out.println(name + " is " + (++age) + " now! Hurray!");
-    };
+    }
 }
 
 interface Flyable {

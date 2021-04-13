@@ -1,4 +1,4 @@
-package ru.sbrf.lesson2.homework;
+package ru.sbrf.lesson2.hw2;
 import java.util.Scanner;
 /**
  * The Fibonacci class is for representing decimal numbers in Fibonacci numeral system

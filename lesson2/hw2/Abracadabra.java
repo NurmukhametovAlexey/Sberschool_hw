@@ -1,4 +1,4 @@
-package ru.sbrf.lesson2.homework;
+package ru.sbrf.lesson2.hw2;
 import java.util.Scanner;
 /**
  * The Abracadabra class is for putting text in a box of '*' symbols

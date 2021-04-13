@@ -1,4 +1,4 @@
-package ru.sbrf.lesson1.homework;
+package ru.sbrf.lesson1.hw1;
 
 import java.util.Scanner;
 

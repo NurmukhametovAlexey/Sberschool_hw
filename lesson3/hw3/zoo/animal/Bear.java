@@ -1,4 +1,4 @@
-package ru.sbrf.lesson3.zoo.animal;
+package ru.sbrf.lesson3.hw3.zoo.animal;
 
 import java.util.concurrent.ThreadLocalRandom;
 
