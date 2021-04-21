@@ -4,13 +4,16 @@ import ru.sbrf.lesson3.hw3and4.zoo.animal.Animal;
 import ru.sbrf.lesson3.hw3and4.zoo.exception.AnimalDuplicateException;
 import ru.sbrf.lesson3.hw3and4.zoo.exception.EnclosureFullException;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Enclosure {
+
     private static int enclosuresCount;
+
     private int enclosureID;
     private int enclosureSize;
-    private ArrayList<Animal> animalsInside;
+    private Set<Animal> animalsInside;
 
     static {
         enclosuresCount = 0;
@@ -18,7 +21,7 @@ public class Enclosure {
 
     public Enclosure(int capacity) {
         enclosureSize = capacity;
-        animalsInside = new ArrayList<Animal>(enclosureSize);
+        animalsInside = new HashSet<Animal>(enclosureSize);
         enclosureID = ++enclosuresCount;
     }
 
@@ -33,10 +36,8 @@ public class Enclosure {
     public void addAnimal(Animal animal) throws EnclosureFullException  {
         if(animalsInside.size() >= enclosureSize)
             throw new EnclosureFullException();
-        else if (animalsInside.contains(animal))
+        else if (!animalsInside.add(animal))
             throw new AnimalDuplicateException();
-        else
-            animalsInside.add(animal);
     }
 
     public void removeAnimal(Animal animal) {
