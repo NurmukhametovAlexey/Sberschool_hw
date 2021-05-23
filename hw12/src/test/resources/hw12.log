@@ -1,0 +1,7 @@
+2021-05-23 15:54:44.066 [mainhread] ERROR H2Example:403 - Таблица "ANIMALS" не найдена
+Table "ANIMALS" not found; SQL statement:
+SELECT id, name, date_born FROM animals [42102-194]
+42S02
+42102
+2021-05-23 15:54:44.070 [mainhread] INFO  H2Example:403 - Program finished
+2021-05-23 15:55:07.937 [mainhread] INFO  H2Example:403 - Program finished
